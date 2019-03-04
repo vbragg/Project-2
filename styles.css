@@ -74,7 +74,7 @@ body {
 
  .backgroundcolor {
   background-color: #FFFEEA;
-	padding-bottom: 4%;
+	padding-bottom: 5%;
  }
 
  a:link, a:visited {
@@ -317,14 +317,11 @@ label, #contact p, .formp {
 }
 
 textarea {
-    font-family: 'Karma', serif;
+		max-width: 85%;
 }
 
-#contactform label:first-child, #contactform label:nth-child(5), textarea {
-   display: block;
-}
-#contactform label:nth-child(2) {
-    display: inline;
+#contactform label, textarea {
+	display: block;
 }
 
 label, input[type="text"], input[type="email"], textarea, .formp {
@@ -344,8 +341,8 @@ input[type="submit"], input[type="reset"] {
     font-weight: bold;
     padding: 2%;
     margin: 2%;
-    font-family: 'Karma', serif;
-    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25rem;
 }
 
 input[type="submit"]:hover, input[type="reset"]:hover {
@@ -458,6 +455,19 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     float: right;
     padding: 9% 2% 2% 2%;
   }
+
+	#contactform label, textarea {
+		display: inline;
+	}
+
+	#contactform label:first-child, #contactform label:nth-child(5), textarea {
+	   display: block;
+	}
+
+	/* #contactform label:nth-child(2) {
+	    display: inline;
+	}
+	*/
 
 }
 @media (min-width: 1251px) {
