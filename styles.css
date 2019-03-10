@@ -351,6 +351,21 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 /* END CONTACT FORM */
 
+
+/*FOR LIGHTBOX */
+
+#firstphoto {
+	width: 70%;
+	max-width: 500px; 
+}
+
+.hidden {
+	visibility: hidden;
+    display: none;
+}
+
+/*END LIGHTBOX */
+
 @media (min-width: 886px) {
   .mobile {
     display: none;
