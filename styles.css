@@ -356,7 +356,11 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 #firstphoto {
 	width: 70%;
-	max-width: 500px; 
+	max-width: 500px;
+	max-height: 600px;
+  display: block;
+	margin: auto;
+  border: 3px solid #2A6C80;   
 }
 
 .hidden {
