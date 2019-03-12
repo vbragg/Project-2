@@ -173,7 +173,7 @@ h2 {
 }
 
 .subpageheader {
-  font-style: 1.75rem;
+  font-size: 1.75rem;
   color: #FF6F61;
   padding: 1% 0 5% 0;
   text-align: center;
@@ -216,7 +216,6 @@ aside p {
 .jobtitle {
     font-weight: bold;
     font-size: 0.8125rem;
-    color: #FF6F61;
     padding-left: 3%;
 }
 
@@ -237,7 +236,7 @@ p.summary {
 
 .companytitles {
     padding-left: 4%;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
 }
 
 #education p {
@@ -351,6 +350,12 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 /* END CONTACT FORM */
 
+#pastworktext {
+	font-family: 'Karla', sans-serif;
+	text-align: center;
+	padding-top: 2%;
+}
+
 
 /*FOR LIGHTBOX */
 
@@ -416,7 +421,6 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 		}
 }
 
-/*END LIGHTBOX */
 
 @media (min-width: 886px) {
   .mobile {
