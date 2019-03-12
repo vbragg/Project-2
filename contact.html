@@ -17,23 +17,29 @@
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/jquery.smoothState.js"></script>
+		<script src="js/forSmoothState.js"></script>
+
 	</head>
 
 	<body>
 
 		<div class="container">
+		<div class="m-scene" id="main">
 
 		<button class="hamburger">&#9776; </button>
   		<button class="cross">&#735;</button>
 
 			<header class="headerotherpages">
+			<div class="m-header scene_element scene_element--fadein">
 
 				<nav class="menu">
 					<ul>
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="resume.html">RESUME</a></li>
-						<li><a href="#">PROJECTS</a></li>
-						<li><a href="#">CONTACT</a></li>
+						<li><a href="pastwork.html">PROJECTS</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
 					</ul>
 				</nav>
 
@@ -49,17 +55,21 @@
 					<ul>
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="resume.html">RESUME</a></li>
-						<li><a href="#">PROJECTS</a></li>
-						<li><a href="#">CONTACT</a></li>
+						<li><a href="pastwork.html">PROJECTS</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
 					</ul>
 
 				</nav>
+
+			</div>
 
 			</header>
 
 		<main class="site-content">
 
 		<div class="backgroundcolor">
+
+		<div class="m-page scene_element scene_element--fadeinup">
 
 				<h1 class="subpageheader">Contact Me</h1>
 
@@ -101,7 +111,8 @@
 		 <p> &copy; Valerie Bragg </p>
 
 </footer>
-
+</div>
+</div>
 	</body>
 
 	<script src="js/main.js"></script>
