@@ -360,12 +360,60 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 	max-height: 600px;
   display: block;
 	margin: auto;
-  border: 3px solid #2A6C80;   
+  border: 3px solid #2A6C80;
 }
 
 .hidden {
 	visibility: hidden;
     display: none;
+}
+
+/* FOR PAGE TRANSITIONS */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+  /* Basic styles for an animated element */
+	.scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+	/** Reverse "exit" animations */
+&.is-exiting {
+		.scene_element {
+			animation-direction: alternate-reverse;
+		}
 }
 
 /*END LIGHTBOX */

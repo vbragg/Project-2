@@ -17,24 +17,29 @@
 		<![endif]-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/jquery.smoothState.js"></script>
+		<script src="js/forSmoothState.js"></script>
 
 	</head>
 	<body class="site">
 		<div class="container">
+		<div class="m-scene" id="main">
 
 		<button class="hamburger">&#9776; </button>
   		<button class="cross">&#735;</button>
 
 			<header class="headerotherpages">
+			<div class="m-header scene_element scene_element--fadein">
 
-				<nav class="menu">
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="resume.html">RESUME</a></li>
-						<li><a href="#">PROJECTS</a></li>
-						<li><a href="#">CONTACT</a></li>
-					</ul>
-				</nav>
+					<nav class="menu">
+
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="resume.html">RESUME</a></li>
+							<li><a href="pastwork.html">PROJECTS</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
 
 				<figure class="logomobile">
 					<img src="images/logo_sized.png" alt="logo" title="logo">
@@ -53,13 +58,16 @@
 					</ul>
 
 				</nav>
-
+			</div>
 			</header>
+
 			<main class="site-content">
 
-			<div class="backgroundcolor">
+		<div class="backgroundcolor">
 
 			<h1 class="subpageheader">PROJECTS</h1>
+
+			<div class="m-page scene_element scene_element--fadeinup">
 
 			<a href="images/socialmediacampaign.jpg" data-lightbox="samplework" data-title="Social media ad made with Photoshop"><img src="images/socialmediacampaign.jpg" title="social media ad" alt="social media ad" id="firstphoto" /></a>
 			 <a href="images/bookcover.jpg" data-lightbox="samplework" data-title="Book cover designed with Photoshop"><img src="images/bookcover.jpg" title="Photoshop bookcover" alt="Photoshop bookcover" class="hidden"/></a>
@@ -86,8 +94,12 @@
 							 <p> &copy; Valerie Bragg </p>
 
 	</footer>
+	</div>
 
 	<script src="js/lightbox.js"></script>
+
+</div>
+
 </body>
 
 </html>
