@@ -20,50 +20,6 @@ TEAL: #2A6C80
 CREAM: #FFFEEA
 */
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-  /* Basic styles for an animated element */
-	.scene_element {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-  /*  animation-fill-mode: both;*/
-  }
-
-  /** An element that fades in */
-  .scene_element--fadein {
-    animation-name: fadeIn;
-  }
-
-  /** An element that fades in and slides up */
-  .scene_element--fadeinup {
-    animation-name: fadeInUp;
-  }
-	/** Reverse "exit" animations */
-&.is-exiting {
-		.scene_element {
-			animation-direction: alternate-reverse;
-		}
-}
-
 .desktopnav {
   display: none;
 }
@@ -104,7 +60,7 @@ CREAM: #FFFEEA
   outline:none;
   z-index:10000000000000;
 }
-.menu{z-index:99999999999999999999999999999; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -423,7 +379,51 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 /* FOR PAGE TRANSITIONS */
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+  /* Basic styles for an animated element */
+	.scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+	/** Reverse "exit" animations */
+&.is-exiting {
+		.scene_element {
+			animation-direction: alternate-reverse;
+		}
+}
 
 
 @media (min-width: 886px) {
@@ -470,7 +470,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     text-align: left;
     width: 23.33333%;
     border-bottom: 1px solid;
-		font-size: 1.05rem;
+		font-size: 1.05rem; 
   }
 
   .menu, .hamburger, .cross {
