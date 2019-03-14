@@ -44,6 +44,10 @@ html.lb-disable-scrolling {
   border: none;
 }
 
+.lightbox a:link {
+  font-size: 0.8125rem;
+}
+
 .lb-outerContainer {
   position: relative;
   *zoom: 1;

@@ -57,19 +57,9 @@ CREAM: #FFFEEA
   .scene_element--fadeinup {
     animation-name: fadeInUp;
   }
-	/** Reverse "exit" animations */
-&.is-exiting {
-		.scene_element {
-			animation-direction: alternate-reverse;
-		}
-}
 
 .desktopnav {
   display: none;
-}
-
-.menu {
-	z-index: 2;
 }
 
 /*****this is controlling hamburger menu *****/
@@ -144,6 +134,9 @@ h1, h2, figcaption {
   font-family: 'Karma', serif;
 }
 
+ .name {
+	 letter-spacing: 3px;
+ }
 
  /*FOR STICKY FOOTER */
 .site {
@@ -226,6 +219,7 @@ h2 {
   padding: 1% 0 5% 0;
   text-align: center;
 }
+
 
 .logootherpages, .logomobile {
   width: 100%;
@@ -557,9 +551,3 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     padding-top: 11%;
   }
 }
-
-  /*#container {
-  width: 90%;
-  margin: auto;
-  background-color: #FFFEEA;
-} */
